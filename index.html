@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<link rel='stylesheet' href='./style.css' />
+	<title>Conversor Youtube para MP3 e outros.</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo"> <a href="localhost:4000"> MULT CONVERT </a></div>
+
+		<ul class="menu">
+			<li><a href="#ajuda">COMO FAÇO ISSO</a></li>
+			<li><a href="">CONTATO</a></li>
+			<li><a href="#sobre">SOBRE</a> </li>
+		</ul>
+	</header>
+
+	<div class="divChoose" id="divChoose">
+		<h1 class="heading">Selecione o que gostaria de fazer.</h1>
+		<img class="imgArrow" src="./arrow.png" alt="Seta para baixo">
+	</div>
+
+
+	<div class="actions">
+
+
+
+		<div class="action" id="action">
+			<h1 class='heading'>Cole seu link abaixo</h1>
+			<input class='URL-input' type="post" required
+				placeholder='Exemplo: https://www.youtube.com/watch?v=MtN1...' />
+
+			<p class="setFormat">Selecione o formato final:</p>
+			<select class='opt'>
+				<option value='mp3'>mp3</option>
+				<option value='mp4'>mp4</option>
+			</select>
+			<br>
+			<button class='convert-button' id='btn' data-toggle="modal" data-target="#myModal">Converter</button>
+		</div>
+
+
+
+		<div class="action2" id="action2">
+			<br /><br />
+			<h1 class="heading">Selecione seu arquivo</h1>
+
+			<form action="/convert" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<input type="file" required name="file" class="inputFile" id="inputFile" />
+				</div>
+
+				<div class="form-group">
+					<label for="to">Para:</label> <br>
+					<select class="opt2" id="selectInput" name="to">
+						<option>mp4</option>
+						<option>flv</option>
+						<option>avi</option>
+						<option>mov</option>
+					</select>
+				</div>
+				<br />
+				<div class="form-group">
+					<button class='convert-button' id="btn2" type="submit" value="send">Converter</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="btns">
+		<button class='chooseButton1' id="btnDownlaod">Download Vídeo Link</button>
+		<button class='chooseButton2' id="btnUploud">Upload e Conversão</button>
+	</div>
+
+	<div class="content">
+		<div class="teste">
+
+			<h2 id="sobre">Converta seus vídeos do YouTube para MP3</h2>
+			<p>Nosso site oferece um modo super fácil e rápido de se converter seus vídeos favoritos para MP3, para que
+				você possa desfrutar de suas músicas quando quiser..</p>
+
+
+
+			<h2>Funciona em todos os Sistemas Operacionais</h2>
+			<p>Nossos serviços estão disponíveis para todos os usuários de Windows, Linux e MacOS. Só resta procurar
+				seus vídeos, e colar sua URL para que possa realizar o download do mesmo. Em alguns instantes o download
+				começara em breve.</p>
+
+
+
+
+			<h2>Tenha suas músicas na palma da sua mão!</h2>
+			<p>Com nossos sistemas de conversão para MP3 e outros, você poderá sempre desfrutar suas músicas favoritas!
+			</p>
+
+
+
+
+
+			<h2>Converta seus vídeos para outros formatos.</h2>
+			<p>Além disso, você pode converter seus vídeos de sua memória para os formatos mais populares como: MP4,
+				FLV, AVI e MOV.</p>
+
+
+
+			<h2 id="ajuda">Como converter música do YouTube para MP3?</h2>
+			<p>Pressione o botão "Download Video Link", copie o link do vídeo do YouTube desejado, após cole a URL na
+				área indicada e pressione “converter”. Em alguns instantes o download começara em breve. </p>
+
+
+
+			<h2>Como converter meus vídeos em outros formatos?</h2>
+			<p>Pressione o botão "Upload e Conversão", logo após carregue seu vídeo, e selecione o formato desejado.
+				Basta pressionar "Converter", que o download começará em breve.</p>
+
+		</div>
+
+	</div>
+
+	<div>
+		<h3><a href=""> YouTube to MP3 </a></h3>
+		<h3><a href="">Baixar vídeos do YouTube </a></h3>
+		<h3><a href="">MP3 High Quality </a></h3>
+	</div>
+
+	<footer>
+		<p class="textFooter">© multconvert.com, 2020
+			Desenvolvido por Mult Convert
+		</p>
+	</footer>
+
+	<div class="modalInput" id="modalInput">
+		<div class="contentModal">
+			<div class="btnFechar" id="btnFechar">X</div>
+			<br>
+			Favor checar o link.
+		</div>
+	</div>
+
+	<div class="modalConvert" id="modalConvert">
+		<div class="contentModal">
+			<div class="btnFechar" id="btnFechar2">X</div>
+			<br>
+			Download iniciado. Por favor aguarde um momento.
+		</div>
+	</div>
+
+	<script src='./script.js'></script>
+</body>
+
+</html>
