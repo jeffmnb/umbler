@@ -1,0 +1,521 @@
+* {
+	text-align: center;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	display: grid;
+	grid-template-columns: auto;
+	margin: 0px;
+	padding: 0px;
+	background-color: #022c43;
+}
+
+.heading {
+	position: relative;
+    font-weight: 700;
+    background: none;
+    line-height: 1.2em;
+	font-family: 'Jost', sans-serif;
+	font-size: 45px;
+	color: white;
+
+}
+
+.URL-input, .convert-button {
+	font-size: 1.3em;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.URL-input {
+	margin: auto;
+	border-radius: 4px 0px 0px 4px;
+	width: 25em;
+	text-align: center;
+	border: 2px solid #eeeeee;
+	background: #eeeeee;
+	outline: none;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.URL-input:focus {
+	border: 2px solid #0485ff;
+}
+
+.convert-button {
+	margin: 2% auto;
+	border: 0px none #024569;
+	border-radius: 10px;
+	background: #28df99;
+	color: #022c43;
+	transition: 0.15s;
+	margin-top: 25px;
+	padding: 10px;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.btns{
+margin: auto;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+
+.chooseButton1{
+	width: 250px;
+	border: 0px none #024569;
+	border-radius: 10px;
+	background: #28df99;
+	color: #022c43;
+	transition: 0.15s;
+	margin-top: 25px;
+	padding: 10px;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 20px;
+}
+
+.chooseButton2{
+	width: 245px;
+	border: 0px none #024569;
+	border-radius: 10px;
+	background: #28df99;
+	color: #022c43;
+	transition: 0.15s;
+	margin-top: 25px;
+	padding: 10px;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	float:right;
+	margin-left: 20px;
+}
+
+.chooseButton1:hover {
+	background: #085297;
+	border-color: #095aa5;
+	color: white;
+	cursor: pointer;
+}
+
+.chooseButton2:hover {
+	background: #085297;
+	border-color: #095aa5;
+	color: white;
+	cursor: pointer;
+}
+
+.convert-button:hover {
+	background: #085297;
+	border-color: #095aa5;
+	color: white;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		display: grid;
+		grid-template-columns: auto;
+		justify-content: center;
+	}
+
+	.URL-input {
+		margin: auto;
+		width: 100%;
+	}
+
+	.convert-button {
+		margin: 7% auto;
+		width: 100%;
+	}
+}
+
+.opt, opt::selection {
+	width: 70px;
+	margin: 10px;
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+.top{
+
+	padding: 20px;	
+}
+
+
+.divChoose{
+	background-color: #163d52;
+	margin: auto;
+	margin-top: 50px;
+	padding: 30px;
+	padding-bottom: 15px;
+	border-radius: 25px;
+	width: max-content;	
+}
+
+.imgArrow{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+.action{
+	background-color: #163d52;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 30px;
+	padding-bottom: 15px;
+	border-radius: 25px;
+	display: none;
+	
+}
+
+.action2{
+	background-color: #163d52;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 30px;
+	padding-bottom: 15px;
+	border-radius: 25px;
+	float: right;
+	width: max-content;
+	display: none;
+}
+p{
+	position: relative;
+    font-weight: 300;
+	margin: 0px;
+	padding: 0px;
+    background: none;
+    line-height: 1.2em;
+	font-family: 'Jost', sans-serif;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.589);
+	margin-bottom: 70px;
+	font-size: 20px;
+}
+
+h2{
+	position: relative;
+    font-weight: 700;
+	margin: auto;
+	padding: 0px;
+    background: none;
+	line-height: 1.2em;
+	text-align: left;
+	font-family: 'Jost', sans-serif;
+	color: white;
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+.setFormat{
+	position: relative;
+    font-weight: 700;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 20px;
+    background: none;
+    line-height: 1.2em;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	
+}
+
+.descrip{
+	width: 60%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.content{
+	background-color: #003754;
+	padding-bottom: 10%;
+	
+}
+
+.teste{
+	/* background-color: indigo; */
+	width: 60%;
+	/* background-color: lawngreen; */
+	margin: auto;
+	padding: 5%;
+	
+}
+
+.p1{
+	color: white;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.actions{
+	width: min-content;
+	margin: auto;
+}
+
+.form-group{
+	position: relative;
+    font-weight: 700;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 20px;
+    background: none;
+    line-height: 1.2em;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #003754;
+	overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #163d52;
+	color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+	background-color: #022c43;
+	color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+  }
+
+  .navs{
+	  margin-left: 70%;
+  }
+
+  .icon{
+	  background-color: red;
+	  font-family: 'Jost', sans-serif;
+	  font-size:xx-small;
+	  color: white;
+	  width: 11%;
+	  padding: 6px;
+  }
+
+  .opt2, opt2::selection {
+	width: 70px;
+	margin: 10px;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+
+
+.header{
+	overflow: hidden;
+	width: 99%;
+	background-color: #003754;
+	padding: 15px;
+	font-size: 18px;
+	font-family: 'Jost', sans-serif;
+	
+}
+
+.menu{
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-right: 10%;
+}
+
+
+li{
+	display: inline-block;
+	color: white;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+li:hover{
+	display: inline-block;
+	color: white;
+	margin-right: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.logo{
+	float: left;
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	font-family: 'Jost', sans-serif;
+	font-weight: bolder;
+}
+
+.logo:hover{
+	float: left;
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	font-family: 'Jost', sans-serif;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.logo{
+	float: none;
+	text-align: center;
+}
+
+.menu{
+	margin-top: 20px;
+	float: none;
+	text-align: center;
+}
+
+li{
+	float: none;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+.divChoose{
+	background-color: #163d52;
+	margin: auto;
+	margin-top: 50px;
+	padding: 30px;
+	padding-bottom: 15px;
+	border-radius: 25px;
+	width: 85%;
+}
+
+.action{
+	background-color: #163d52;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 30px;
+	padding-bottom: 15px;
+	border-radius: 25px;
+	display: none;
+	
+	
+}
+
+.URL-input {
+	font-size: 1.3em;
+	padding: 5px 10px;
+	border-radius: 5px;
+	width: max-content
+}
+
+}
+
+
+
+
+footer {
+	width: max-content;	
+	padding:20px;
+	background:#022c43;
+	color: white;
+	margin: auto;
+  }
+
+  .textFooter{
+	  margin: 0;
+  }
+
+
+
+
+  .modalInput, .modalConvert{
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0, 0, 0, 0.795);
+	  margin: auto;
+	  text-align: center;
+	  position: fixed;
+	  margin-top: 10px;  
+  }
+
+  .contentModal{
+	  font-size: 25px;
+	  background-color: white;
+	  color: black;
+	  width:max-content;
+	  top: 10px;
+	  height: max-content;
+	  margin: auto;
+	  margin-top: 15%;
+	  padding: 15px;
+	  border-radius: 20px;
+  }
+
+  .btnFechar{
+	  margin-left: 90%;
+	width: 25px;
+	height: 25px;
+	background-color: lightgray;
+	border-radius: 20px;
+
+  }
+
+  .btnFechar:hover{
+	margin-left: 90%;
+  width: 25px;
+  height: 25px;
+  background-color: lightgray;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+h3, h3:hover{
+	font-family: 'Jost', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: white;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	cursor: pointer;
+}
