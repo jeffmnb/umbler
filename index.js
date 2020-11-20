@@ -9,7 +9,9 @@ const PORT = 3000;
 
 
 
-
+app.listen(PORT, () => {
+	console.log(`Server Works !!! At port ${PORT}`);
+});
 
 
 const ffmpeg = require("fluent-ffmpeg");
@@ -96,9 +98,7 @@ app.post("/convert", (req, res) => {
 
 app.use(cors());
 
-app.listen(PORT, () => {
-	console.log(`Server Works !!! At port ${PORT}`);
-});
+
 
 app.get("/", function (req, res) {
 	res.sendFile("C:/Users/Jefte/OneDrive/Área de Trabalho/Cursos/FullStack React Br/moorada/youtubeDownloader-master" + "/index.html")
