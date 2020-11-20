@@ -8,15 +8,17 @@ app.use(express.static('assets'))
 const PORT = 3000;
 
 
+app.use(express.static(__dirname));
 
-app.listen(PORT, () => {
-	console.log(`Server Works !!! At port ${PORT}`);
+app.get('*', function(req, res){
+  res.redirect('/index.html');
 });
 
+var port = 3000;
+app.listen(port);
+console.log('Umbler - Express server started on port %s', port);
 
-app.get("/", function (req, res) {
-	res.sendFile(__dirname + "/index.html")
-})
+
 
 const ffmpeg = require("fluent-ffmpeg");
 
