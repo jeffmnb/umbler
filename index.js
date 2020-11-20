@@ -14,6 +14,10 @@ app.listen(PORT, () => {
 });
 
 
+app.get("/", function (req, res) {
+	res.sendFile(__dirname + "/index.html")
+})
+
 const ffmpeg = require("fluent-ffmpeg");
 
 const bodyParser = require("body-parser");
@@ -38,9 +42,9 @@ app.use(
 
 ffmpeg.setFfmpegPath(__dirname + "/ffmpeg32/ffmpeg.exe");
 
-ffmpeg.setFfprobePath("C:/ffmpeg/bin");
+ffmpeg.setFfprobePath(__dirname + "ffmpeg/bin");
 
-ffmpeg.setFlvtoolPath("C:/flvtool");
+ffmpeg.setFlvtoolPath(__dirname + "flvtool");
 
 console.log(ffmpeg);
 
@@ -100,9 +104,7 @@ app.use(cors());
 
 
 
-app.get("/", function (req, res) {
-	res.sendFile("C:/Users/Jefte/OneDrive/Área de Trabalho/Cursos/FullStack React Br/moorada/youtubeDownloader-master" + "/index.html")
-})
+
 
 app.get('/downloadmp3', async (req, res, next) => {
 	try {
